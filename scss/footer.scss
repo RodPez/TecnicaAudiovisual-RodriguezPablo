@@ -1,0 +1,41 @@
+footer{
+	grid-area: footer;
+	background-color: $colorHeaderFooter;
+	width: 100%;
+	height: 6rem;
+		&.gridFooter{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
+			grid-template-areas: 
+			"textoFooter linksFooter";
+				&.footerText{
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-start;
+					align-items: center;
+						&.textoFooter{
+							grid-area: textoFooter;
+							font-family: Futura-Bold;
+							font-size: 2rem;
+						}
+				}
+				&.footerLinks{
+					display: flex;
+					flex-direction: row;
+					justify-content:flex-end;
+					align-items: center;
+						&.contenedor__link{
+							grid-area: linksFooter;
+							width:4rem;
+							height:4rem;
+							padding: 0.4rem;
+								&.link__imagen{
+									width: 100%;
+									height: 100%;
+									margin: 0;
+								}
+						}
+				}
+		}
+}

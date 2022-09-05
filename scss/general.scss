@@ -1,0 +1,36 @@
+* {
+	font-size: 62.5%;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face{
+	font-family: Futura-Bold;
+	src: url(../assets/fuentes/futura_bold.otf);
+}
+
+body{
+	background-color: $colorBody ;
+		&.gridPrincipal{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto auto auto;
+			grid-template-areas: 
+			"header" 
+			"main" 
+			"hr" 
+			"footer";
+		}
+		&.contenedor{
+			width: 85%;
+			margin: 0 auto;
+		}
+		& hr{
+			grid-area: hr;
+			outline-style: groove;
+			padding: 0;
+			margin-top: 4rem;
+		}
+
+}
+
